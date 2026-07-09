@@ -2,9 +2,20 @@
 
 A first-person **looter shooter** built with **Unreal Engine 5.6**, featuring AI enemies driven by a data-driven Utility AI system designed to make NPCs behave like human players — fighting, taking cover, looting, healing, and retreating based on scored decisions.
 
+<p align="center">
+  <img src="Images/gameplay.png" width="45%">
+  <img src="Images/gameplay.png" width="45%">
+</p>
+
 ---
 
 ## Features
+
+| Utility AI Decision Making | Spatial Memory System |
+|---|---|
+| AI evaluates Attack, Cover, Loot, Heal, Reload, and Escape using scored considerations. | Region volumes store known enemies, items, danger, and visit history. |
+| ![Utility AI Debugger](images/debugger.png) | ![Region System](images/region.png) |
+
 
 - **First-person gameplay** — shared character base (`AFirstPersonBase`) for both the player and AI enemies, with health, inventory, and equipment slot components.
 - **Utility AI enemies** — enemies evaluate actions (Attack, Cover, Loot, Heal, Reload, Escape) every few seconds through a time-sliced world subsystem, so many AI agents can decide without frame hitches.
