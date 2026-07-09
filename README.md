@@ -14,7 +14,7 @@ A first-person **looter shooter** built with **Unreal Engine 5.6**, featuring AI
 | Utility AI Decision Making | Spatial Memory System |
 |---|---|
 | AI evaluates Attack, Cover, Loot, Heal, Reload, and Escape using scored considerations. | Region volumes store known enemies, items, danger, and visit history. |
-| ![Utility AI Debugger](images/debugger.png) | ![Region System](images/region.png) |
+| ![Utility AI Debugger](Images/debugger.png) | ![Region System](Images/region.png) |
 
 
 - **First-person gameplay** — shared character base (`AFirstPersonBase`) for both the player and AI enemies, with health, inventory, and equipment slot components.
