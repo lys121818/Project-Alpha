@@ -17,6 +17,21 @@
 
 ---
 
+## Design Architecture Diagram
+<p align="center">
+  <img src="Images/DesignArchitecture.png" width="70%">
+</p>
+
+The AI system separates high-level decision-making from behavior execution. The AI Controller gathers information about the agent and its environment, including visible targets, available items, health, ammunition, and region memory. This information is passed to the Utility AI system, which evaluates possible actions such as Attack, Cover, Loot, Reload, and Heal.
+
+## Behavior Tree Task Executes
+<p align="center">
+  <img src="Images/BehaviorTree.png" width="70%">
+</p>
+
+The Behavior Tree converts the selected Utility AI decision into a sequence of gameplay tasks. 
+Blackboard values store shared information such as the current target, destination, combat state, and selected region, allowing services, decorators, and tasks to respond to changes during execution.
+
 ## Utility AI Decision Making
 <p align="center">
   <img src="Images/debugger.png" width="70%">
